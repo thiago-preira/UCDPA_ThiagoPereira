@@ -68,15 +68,14 @@ The source reporting the weather event (can be any entry; isn’t restricted in 
 * `magnitude` Ex: 0.75, 60, 0.88, 2.75
 The measured extent of the magnitude type ~ only used for wind speeds (in knots) and hail size
 (in inches to the hundredth).
-magnitude_type Ex: EG, MS, MG, ES
+* `magnitude_type` Ex: EG, MS, MG, ES
 EG = Wind Estimated Gust; 
 ES = Estimated Sustained Wind; 
 MS = Measured Sustained Wind;
 MG = Measured Wind Gust (no magnitude is included for instances of hail).
 * `flood_cause` Ex: Ice Jam, Heavy Rain, Heavy Rain/Snow Melt
 Reported or estimated cause of the flood.
-category
-Unknown (During the time of downloading this particular file, NCDC has never seen anything
+* `category` Unknown (During the time of downloading this particular file, NCDC has never seen anything
 provided within this field.)
 * `tor_f_scale` Ex: EF0, EF1, EF2, EF3, EF4, EF5
 Enhanced Fujita Scale describes the strength of the tornado based on the amount and type of
