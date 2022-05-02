@@ -34,10 +34,6 @@ storm_event_fatalities tables (Primary database key field).
 * `year` Ex: 2000, 2006, 2012 The four digit year for the event in this record.
 * `month_name` Ex: January, February, March The name of the month for the event in this record (spelled out; not abbreviated).
 * `event_type` Ex: Hail, Thunderstorm Wind, Snow, Ice (spelled out; not abbreviated)
-* `begin_date_time` Ex: 04/1/2012 20:48:00
-MM/DD/YYYY hh:mm:ss (24 hour time usually in LST)
-* `end_date_time` Ex: 04/1/2012 21:03:00
-MM/DD/YYYY hh:mm:ss (24 hour time usually in LST)
 * `injuries_direct` Ex: 1, 0, 56
 The number of injuries directly caused by the weather event.
 * `injuries_indirect` Ex: 0, 15, 87
