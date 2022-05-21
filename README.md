@@ -3,7 +3,7 @@
 ## Introduction
 [The National Centers for Environment Information](https://www.ncei.noaa.gov) maintains one of the most significant archives on Earth, managing more than 30 petabytes of data and information that spans the entire spectrum of Earth’s environmental systems and cycles with comprehensive oceanic, atmospheric, and geophysical data.
 
-The [Storm Events Database](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00773) is an integrated database of severe weather events across the United States from 1950 to this year, with information about a storm event's location, azimuth, distance, impact, and severity, including the cost of damages to property and crops, loss of life, injuries, property damage, disruption to commerce, etc.
+The [Storm Events Database](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00773) is an integrated database of severe weather events across the United States from 1950 to this year, with information about the occurrence of storms and other significant weather phenomena having sufficient intensity to cause loss of life, injuries, significant property damage, disruption to commerce.
 
 This dataset allows identify the most severe storms and damage caused by them, as define correlations between the features that compose the dataset.
 
@@ -20,19 +20,12 @@ The full descripiotn of all features as described [here](https://www1.ncdc.noaa.
 ### Event Details file
 Named as `StormEvents_details-ftp_v1.0_dYYYY_cYYYYMMdd.csv` where dYYYY = data year and cYYYYMMdd = file creation date 
 
-* `begin_yearmonth`: Ex: 201212 (YYYYMM format) The year and month that the event began 
-* `begin_day`: Ex: 31 (DD format) The day of the month that the event began 
-* `begin_time`: Ex: 2359 (hhmm format) The time of day that the event began 
-* `end_yearmonth` Ex: Ex: 201301 (YYYYMM format) The year and month that the event ended
-* `end_day` Ex: 01 (DD format) The day of the month that the event ended
-* `end_time` Ex: 0001 (hhmm format) The time of day that the event ended
 * `episode_id` Ex: 61280, 62777, 63250 ID assigned by NWS to denote the storm episode;
 * `event_id` Ex: 383097, 374427, 364175 ID assigned by NWS for each individual storm event contained within a storm episode; links
 the record with the same event in the storm_event_details, storm_event_locations and
 storm_event_fatalities tables (Primary database key field).
 * `state` Ex: GEORGIA, WYOMING, COLORADO The state name where the event occurred (no State ID’s are included here; State Name is spelled out in ALL CAPS).
 * `year` Ex: 2000, 2006, 2012 The four digit year for the event in this record.
-* `month_name` Ex: January, February, March The name of the month for the event in this record (spelled out; not abbreviated).
 * `event_type` Ex: Hail, Thunderstorm Wind, Snow, Ice (spelled out; not abbreviated)
 * `injuries_direct` Ex: 1, 0, 56
 The number of injuries directly caused by the weather event.
@@ -51,11 +44,6 @@ $10,000; 10.00M = $10,000,000).
 * `magnitude` Ex: 0.75, 60, 0.88, 2.75
 The measured extent of the magnitude type ~ only used for wind speeds (in knots) and hail size
 (in inches to the hundredth).
-* `magnitude_type`: Ex: EG, MS, MG, ES
-EG = Wind Estimated Gust; 
-ES = Estimated Sustained Wind; 
-MS = Measured Sustained Wind;
-MG = Measured Wind Gust (no magnitude is included for instances of hail).
 * `tor_f_scale` Ex: EF0, EF1, EF2, EF3, EF4, EF5
 Enhanced Fujita Scale describes the strength of the tornado based on the amount and type of
 damage caused by the tornado. The F-scale of damage will vary in the destruction area;
@@ -115,7 +103,12 @@ The gender of the fatality (sometimes ‘null’ if unknown)
 |VE Vehicle and/or Towed Trailer|
 
 
+
 ## Results
+* **Texas** is by far the state with more events and damage caused by storms, with more than 70 billions in damage in the past 10 years.
+*  The event that causes more damage is **Flash Flood** with more than 75 billions in damage.
+*  **Tornados, Winter Weather, Thunderstorm Winds, Heat and Excessive Heat** are the events that caused more deaths.
+*  **Heat** kills more infant and elderly people
 
 ## References
 * The Severe Weather Data Inventory (SWDI): a Geospatial Database of Severe Weather Data at the NOAA National Centers for Environmental Information (NCEI)
